@@ -1,0 +1,235 @@
+// Variables
+// Colores
+$color-principal:#77b5fe;
+$color-secundario: white;
+$color-terciario: black;
+// Medidas
+$borders: 2px;
+$paddings: 20px 20px;
+$full-size: 100%;
+
+/* Inicio HTML */
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    body {
+    background-color: $color-principal;
+    }
+    li {
+    list-style: none;
+    }
+    a {
+    color: $color-terciario;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    }
+}
+/* Fin HTML */
+
+/* Mobile (Small, < Medium Screen Sizes) */
+@media only screen and (max-width:600px) {
+    /* Inicio Header Mobile */
+    .header-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        width: auto;
+        .header-menu {
+            width: 98%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-around;
+            .header-logo-container {
+                justify-content: center;
+                .logo {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .header-links-menu {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                align-items: center;
+                .header-links {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-between;
+                }
+            }
+            .header-searchbar-div {
+                display: none;
+            }
+        }
+    }
+    /* Fin Header Mobile */
+
+    /* Inicio Footer Mobile */
+    footer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: $color-secundario;
+        position: static;
+        bottom: 0;
+        width: auto;
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: $full-size;
+            .footer-div-1 {
+                display: flex;
+                flex-flow: row;
+                padding: 0 20px;
+                .footer-p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .footer-links-container {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    /* Fin Footer Mobile */
+
+    /* Inicio ExpoArte Body Mobile */
+    .expoarte-body-section-1 {
+        padding: $paddings;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 20px 0;
+        .expoarte-img-1-container, .expoarte-img-2-container, .expoarte-img-3-container, .expoarte-img-4-container, .expoarte-img-5-container, .expoarte-img-6-container {
+            width: $full-size;
+            height: 300px;
+            border: $borders solid $color-terciario;
+            .panther-girl, .moon-fairy, .portrait-2, .portrait-8, .space-dance, .tattoed-girl {
+                width: $full-size;
+                height: $full-size;
+            }
+        }
+    }
+    /* Fin ExpoArte Body Mobile */
+}
+
+/* Desktop (Medium and Large Screen Sizes) */
+@media only screen and (min-width:601px) {
+    /* Inicio Header */
+    .header-container {
+        background-color: $color-secundario;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $color-terciario;
+        width: auto;
+        .header-menu {
+            border: 10px solid $color-principal;
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            .header-logo-container {
+                justify-content: center;
+                align-items: center;
+                .logo {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+            .header-links-container {
+                display: flex;
+                align-items: center;
+                width: 70%;
+                .header-links {
+                    width: $full-size;
+                    .header-links-menu {
+                        display: flex;
+                        justify-content: space-around;    
+                    }
+                }
+            }
+            .header-searchbar-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 10%;
+            }
+        }
+    }
+    /* Fin Header*/
+
+    /* Inicio Footer*/
+    footer {
+        display: flex;
+        position: static;
+        bottom: 0;
+        width: auto;
+        background-color: $color-secundario;
+        height: 100px;
+        border: 1px solid $color-terciario;
+        .footer-container {
+            display: flex;
+            align-items: center;
+            width: $full-size;
+            .footer-div-1 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 20px;
+                .footer-p {
+                    display: flex;
+                    justify-content: center;
+                    text-align: justify;
+                    align-items: center;
+                }
+            }
+            .footer-div-2 {
+                display: flex;
+                align-items: center;
+                width: 30%;
+                height: $full-size;
+                .footer-links-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: $full-size;
+                }
+            }
+        }
+    }
+    /* Fin Footer */
+
+    /* Inicio ExpoArte Body */
+    .expoarte-body-section-1 {
+        padding: $paddings;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .expoarte-img-1-container, .expoarte-img-2-container, .expoarte-img-3-container, .expoarte-img-4-container, .expoarte-img-5-container, .expoarte-img-6-container {
+            width: $full-size;
+            height: $full-size;
+            border: $borders solid $color-terciario;
+            .panther-girl, .moon-fairy, .portrait-2, .portrait-8, .space-dance, .tattoed-girl {
+                height: $full-size;
+                width: $full-size;
+            }
+        }
+    }
+    /* Fin ExpoArte Body */
+}

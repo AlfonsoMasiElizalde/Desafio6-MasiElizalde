@@ -1,0 +1,181 @@
+/* Inicio HTML */
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: larger; }
+  html body {
+    background-color: #77b5fe; }
+  html li {
+    list-style: none; }
+  html a {
+    color: black; }
+  html * {
+    margin: 0;
+    padding: 0; }
+
+/* Fin HTML */
+/* Mobile (Small, < Medium Screen Sizes) */
+@media only screen and (max-width: 600px) {
+  /* Inicio Header Mobile */
+  .header-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: auto; }
+    .header-container .header-menu {
+      width: 98%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-around; }
+      .header-container .header-menu .header-logo-container {
+        justify-content: center; }
+        .header-container .header-menu .header-logo-container .logo {
+          width: 150px;
+          height: 150px; }
+      .header-container .header-menu .header-links-menu {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center; }
+        .header-container .header-menu .header-links-menu .header-links {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between; }
+      .header-container .header-menu .header-searchbar-div {
+        display: none; }
+  /* Fin Header Mobile */
+  /* Inicio Footer Mobile */
+  footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    position: static;
+    bottom: 0;
+    width: auto; }
+    footer .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%; }
+      footer .footer-container .footer-div-1 {
+        display: flex;
+        flex-flow: row;
+        padding: 0 20px; }
+        footer .footer-container .footer-div-1 .footer-p {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+      footer .footer-container .footer-links-container {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around; }
+  /* Fin Footer Mobile */
+  /* Inicio ExpoArte Body Mobile */
+  .expoarte-body-section-1 {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px 0; }
+    .expoarte-body-section-1 .expoarte-img-1-container, .expoarte-body-section-1 .expoarte-img-2-container, .expoarte-body-section-1 .expoarte-img-3-container, .expoarte-body-section-1 .expoarte-img-4-container, .expoarte-body-section-1 .expoarte-img-5-container, .expoarte-body-section-1 .expoarte-img-6-container {
+      width: 100%;
+      height: 300px;
+      border: 2px solid black; }
+      .expoarte-body-section-1 .expoarte-img-1-container .panther-girl, .expoarte-body-section-1 .expoarte-img-1-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-1-container .portrait-2, .expoarte-body-section-1 .expoarte-img-1-container .portrait-8, .expoarte-body-section-1 .expoarte-img-1-container .space-dance, .expoarte-body-section-1 .expoarte-img-1-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-2-container .panther-girl, .expoarte-body-section-1 .expoarte-img-2-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-2-container .portrait-2, .expoarte-body-section-1 .expoarte-img-2-container .portrait-8, .expoarte-body-section-1 .expoarte-img-2-container .space-dance, .expoarte-body-section-1 .expoarte-img-2-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-3-container .panther-girl, .expoarte-body-section-1 .expoarte-img-3-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-3-container .portrait-2, .expoarte-body-section-1 .expoarte-img-3-container .portrait-8, .expoarte-body-section-1 .expoarte-img-3-container .space-dance, .expoarte-body-section-1 .expoarte-img-3-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-4-container .panther-girl, .expoarte-body-section-1 .expoarte-img-4-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-4-container .portrait-2, .expoarte-body-section-1 .expoarte-img-4-container .portrait-8, .expoarte-body-section-1 .expoarte-img-4-container .space-dance, .expoarte-body-section-1 .expoarte-img-4-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-5-container .panther-girl, .expoarte-body-section-1 .expoarte-img-5-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-5-container .portrait-2, .expoarte-body-section-1 .expoarte-img-5-container .portrait-8, .expoarte-body-section-1 .expoarte-img-5-container .space-dance, .expoarte-body-section-1 .expoarte-img-5-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-6-container .panther-girl, .expoarte-body-section-1 .expoarte-img-6-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-6-container .portrait-2, .expoarte-body-section-1 .expoarte-img-6-container .portrait-8, .expoarte-body-section-1 .expoarte-img-6-container .space-dance, .expoarte-body-section-1 .expoarte-img-6-container .tattoed-girl {
+        width: 100%;
+        height: 100%; }
+  /* Fin ExpoArte Body Mobile */ }
+
+/* Desktop (Medium and Large Screen Sizes) */
+@media only screen and (min-width: 601px) {
+  /* Inicio Header */
+  .header-container {
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: auto; }
+    .header-container .header-menu {
+      border: 10px solid #77b5fe;
+      width: 98%;
+      display: flex;
+      justify-content: space-between; }
+      .header-container .header-menu .header-logo-container {
+        justify-content: center;
+        align-items: center; }
+        .header-container .header-menu .header-logo-container .logo {
+          height: 100px;
+          width: 100px; }
+      .header-container .header-menu .header-links-container {
+        display: flex;
+        align-items: center;
+        width: 70%; }
+        .header-container .header-menu .header-links-container .header-links {
+          width: 100%; }
+          .header-container .header-menu .header-links-container .header-links .header-links-menu {
+            display: flex;
+            justify-content: space-around; }
+      .header-container .header-menu .header-searchbar-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%; }
+  /* Fin Header*/
+  /* Inicio Footer*/
+  footer {
+    display: flex;
+    position: static;
+    bottom: 0;
+    width: auto;
+    background-color: white;
+    height: 100px;
+    border: 1px solid black; }
+    footer .footer-container {
+      display: flex;
+      align-items: center;
+      width: 100%; }
+      footer .footer-container .footer-div-1 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px; }
+        footer .footer-container .footer-div-1 .footer-p {
+          display: flex;
+          justify-content: center;
+          text-align: justify;
+          align-items: center; }
+      footer .footer-container .footer-div-2 {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        height: 100%; }
+        footer .footer-container .footer-div-2 .footer-links-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%; }
+  /* Fin Footer */
+  /* Inicio ExpoArte Body */
+  .expoarte-body-section-1 {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px; }
+    .expoarte-body-section-1 .expoarte-img-1-container, .expoarte-body-section-1 .expoarte-img-2-container, .expoarte-body-section-1 .expoarte-img-3-container, .expoarte-body-section-1 .expoarte-img-4-container, .expoarte-body-section-1 .expoarte-img-5-container, .expoarte-body-section-1 .expoarte-img-6-container {
+      width: 100%;
+      height: 100%;
+      border: 2px solid black; }
+      .expoarte-body-section-1 .expoarte-img-1-container .panther-girl, .expoarte-body-section-1 .expoarte-img-1-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-1-container .portrait-2, .expoarte-body-section-1 .expoarte-img-1-container .portrait-8, .expoarte-body-section-1 .expoarte-img-1-container .space-dance, .expoarte-body-section-1 .expoarte-img-1-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-2-container .panther-girl, .expoarte-body-section-1 .expoarte-img-2-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-2-container .portrait-2, .expoarte-body-section-1 .expoarte-img-2-container .portrait-8, .expoarte-body-section-1 .expoarte-img-2-container .space-dance, .expoarte-body-section-1 .expoarte-img-2-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-3-container .panther-girl, .expoarte-body-section-1 .expoarte-img-3-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-3-container .portrait-2, .expoarte-body-section-1 .expoarte-img-3-container .portrait-8, .expoarte-body-section-1 .expoarte-img-3-container .space-dance, .expoarte-body-section-1 .expoarte-img-3-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-4-container .panther-girl, .expoarte-body-section-1 .expoarte-img-4-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-4-container .portrait-2, .expoarte-body-section-1 .expoarte-img-4-container .portrait-8, .expoarte-body-section-1 .expoarte-img-4-container .space-dance, .expoarte-body-section-1 .expoarte-img-4-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-5-container .panther-girl, .expoarte-body-section-1 .expoarte-img-5-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-5-container .portrait-2, .expoarte-body-section-1 .expoarte-img-5-container .portrait-8, .expoarte-body-section-1 .expoarte-img-5-container .space-dance, .expoarte-body-section-1 .expoarte-img-5-container .tattoed-girl, .expoarte-body-section-1 .expoarte-img-6-container .panther-girl, .expoarte-body-section-1 .expoarte-img-6-container .moon-fairy, .expoarte-body-section-1 .expoarte-img-6-container .portrait-2, .expoarte-body-section-1 .expoarte-img-6-container .portrait-8, .expoarte-body-section-1 .expoarte-img-6-container .space-dance, .expoarte-body-section-1 .expoarte-img-6-container .tattoed-girl {
+        height: 100%;
+        width: 100%; }
+  /* Fin ExpoArte Body */ }
